@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #ff2f2f;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    position: relative;
+    flex: 1 1 auto;
+}
+
+body{
+    padding-top: 110px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fon-img{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: url(./images/speedometer-1249610_1920.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+}
+
+
+.logo-car{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo-car:hover{
+    transform: scale(1.2);
+}
+
+.home-hed:hover{transition: 0.5s;}
+.news-hed:hover{transition: 0.5s;}
+.about-hed:hover{transition: 0.5s;}
+
+
+.header{
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid red;
+}
+.header_mini{
+    box-shadow: 0px 0px 29px -11px rgba(0,0,0,0.6);
+    background-color: rgb(53, 53, 53);
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_mini {
+    opacity: 0.9;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+li{
+    display: inline;
+    margin: 0px 30px;
+    font-weight: 600;
+}
+a{
+    font-size: 25px;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    color: white;
+}
+.header__container :hover{
+    color: rgb(255, 0, 0);
+}
+
+
+h1{
+    text-align: center;
+    word-spacing: 15px;
+    margin-top: 3%;
+}
+.liniya-1{
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.liniya-2{
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+}
+.lorem1{
+    margin: 5% 7%;
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    word-spacing: 15px;
+    margin-top: 3%;
+}
+.img-1{
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 34%;
+    max-width: 30%;
+}
+.top-1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    margin-top: -2;
+
+}
+.lorem2{
+    font-size: 23px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.fon-1-img{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: url(./images/depositphotos_94612960-stock-photo-modern-car-speedometer-and-illuminated.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+}
+
+
+.most{
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.lamba{
+    position: relative;
+}
+.lamba-span, .bmw-span{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 28px;
+    font-weight: 700;
+}
+.lamba-btn{
+    position: absolute;
+    border-radius: 10px;
+    max-width: 38%;
+    margin-left: 10%;
+}
+.lorem3{
+    position: relative;
+    margin-left: 52%;
+    margin-right: 1%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.bmmw{
+    position: relative;
+    margin-top: 25%;
+}
+.bmmw-btn{
+    border-radius: 10px;
+    float: right;
+    max-width: 38%;
+    margin-right: 10%;
+}
+.lorem4{
+    position: absolute;
+    margin-right: 52%;
+    margin-left: 10%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.liniya-3{
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.inter-1{
+    font-size: 30px;
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.inter-2{
+    font-size: 30px;
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.liniya-4{
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 45%;
+    position: absolute;
+}
+.oth{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 55%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.car-anim{
+    margin-top: 100%;
+}
+.car-anim-btn{
+    content: url(./images/free-icon-sport-car-3085330.png);
+    position: relative;
+    left: -160px;
+    width: 160px;
+    animation: sport-car 20s linear infinite;
+}
+
+@keyframes sport-car{
+    0% { left: -160px;}
+    100%{
+        left: 72%;
+        opacity: 0;
+    }
+}
+
+footer{
+    color: white;
+    height: 10%;
+    margin-top: -5%;
+    background: rgb(21, 21, 21);
+}
+.wrapper-foot{
+    margin-top: 7%;
+}
+
+.home-btn, .about-btn, .gallery-btn, .news-btn, .blog-btn, .faq-btn, .contact-btn, .privac-btn{
+    color: white;
+    text-decoration: none;
+}
+.home:hover, .about:hover, .gallery:hover, .news:hover,
+.blog:hover, .faq:hover, .contact:hover, .privac:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+.home, .about, .gallery, .news, .blog, .faq, .contact{
+    width: 40px;
+}
+.privac{
+    width: 110px;
+}
+
+.home, .about, .gallery, .news{
+    margin: 15px 0px;
+}
+.blog, .faq, .contact, .privac{
+    margin: 10px 0px;
+}
+.parag-wrap{
+    position: absolute;
+    width: 100px;
+    margin-left: 45%;
+}
+
+.parag-2-wrap{
+    position: absolute;
+    width: 100px;
+    margin-left: 70%;
+}
+.wrapper-foot{
+    height: 50%;
+    position: relative;
+}
+
+.fotki{
+    margin-left: 10%;
+    display: inline-block;
+}
+
+
+a.images-1{
+    background: url(./images/fb_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20%;
+}
+a.images-1:hover{
+    background: url(./images/fb.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-1{
+    width: 60px;
+}
+
+a.images-2{
+    background: url(./images/insta_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 150%;
+    
+}
+a.images-2:hover{
+    background: url(./images/insta.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-2{
+    width: 60px;
+}
+
+a.images-3{
+    background: url(./images/youtube_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+a.images-3:hover{
+    background: url(./images/youtube.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-3{
+    width: 60px;
+}
+
+.liniya{
+    position: relative;
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.copyrig {
+    text-align: center;
+    margin: 60px 0px;
+}
+

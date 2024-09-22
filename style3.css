@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #ff2f2f;
+}
+
+html, body{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    position: relative;
+    flex: 1 1 auto;
+}
+
+body{
+    padding-top: 110px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fon-img{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: url(./images/speedometer-1249610_1920.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+}
+
+.logo-car{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo-car:hover{
+    transform: scale(1.2);
+}
+
+.home-hed:hover{transition: 0.5s;}
+.news-hed:hover{transition: 0.5s;}
+.about-hed:hover{transition: 0.5s;}
+
+
+.header{
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    z-index: 9999;
+    border-bottom: 1px solid red;
+}
+.header_mini{
+    box-shadow: 0px 0px 29px -11px rgba(0,0,0,0.6);
+    background-color: rgb(53, 53, 53);
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_mini {
+    opacity: 0.9;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+li{
+    display: inline;
+    margin: 0px 30px;
+    font-weight: 600;
+}
+
+a{
+    font-size: 25px;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    color: white;
+}
+.header__container :hover{
+    color: rgb(255, 0, 0);
+}
+
+.always{
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+}
+
+.since{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.lorem1{
+    position: relative;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: 500;
+    word-spacing: 5px;
+    font-size: 22px;
+}
+
+.bmw-span{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.img1{
+    max-width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 3px solid red;
+}
+.monst{
+    text-align: center;
+    margin-top: 8%;
+    font-size: 25px;
+    font-weight: 900;
+    /* -webkit-text-stroke: 1px rgb(255, 200, 0); */
+    margin: 0 10%;
+}
+
+.liniya1{
+    position: relative;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.lorem2{
+    margin: 5% 3%;
+    font-size: 20px;
+}
+.lorem2 a{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+.pp{
+    margin-top: 3%;
+}
+.asid{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.fon-1-img{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: url(./images/depositphotos_94612960-stock-photo-modern-car-speedometer-and-illuminated.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    margin-top: 10%;
+}
+
+
+.liniya2{
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+
+
+
+.contac{
+    position: relative;
+}
+.cont{
+    text-align: center;
+    margin-top: 8%;
+    font-size: 35px;
+    font-weight: 600;
+    word-spacing: 10px;
+}
+.pr-1{
+    text-align: center;
+    margin-top: 5%;
+    word-spacing: 10px;
+    font-size: 25px;
+}
+.div-pr{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3%;
+    word-spacing: 5px;
+}
+
+.pr-2-a {
+    color: red;
+}
+.pr-2-nom {
+    margin-right: 1%;
+    color: white;
+}
+.pr-2-b {
+    margin-top: 1%;
+    color: red;
+}
+.pr-2-c {
+    margin-top: 1%;
+    color: red;
+}
+.div-pr span{
+    color: white;
+}
+
+
+.insta {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+    word-spacing: 10px;
+    text-decoration: underline;
+}
+.ins{
+    background: linear-gradient(rgb(255, 140, 0), rgb(255, 0, 166), rgb(162, 0, 255));
+    padding: 5px;
+    border-radius: 10px;
+}
+.face {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 4%;
+    word-spacing: 10px;
+    text-decoration: underline;
+}
+.fac{
+    background: linear-gradient(rgb(166, 164, 255), rgb(0, 26, 159));
+    padding: 5px;
+    border-radius: 10px;
+}
+.youtub{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 4%;
+    word-spacing: 10px;
+    text-decoration: underline;
+}
+.yout{
+    background: linear-gradient(rgb(53, 53, 53), rgb(255, 0, 0));
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.div-input{
+    position: relative;
+    border: 4px solid rgb(255, 0, 0);
+    background: linear-gradient(rgb(0, 0, 0), rgb(184, 10, 10), rgb(0, 0, 0));
+    width: 55%;
+    padding: 5%;
+    margin-top: 10%;
+    margin-left: 23%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.reg{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.inp-1{
+    width: 100%;
+    margin-bottom: 7%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.inp-2{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+.inp-3{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+
+.but-reg{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10%;
+    cursor:pointer;
+    background: linear-gradient(rgb(255, 16, 16), rgb(128, 0, 255));
+}
+
+.but-reg:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.car-anim{
+    margin-top: 5%;
+}
+.car-anim-btn{
+    content: url(./images/free-icon-sport-car-3085330.png);
+    position: relative;
+    left: -160px;
+    width: 160px;
+    animation: sport-car 20s linear infinite;
+}
+
+@keyframes sport-car{
+    0% { left: -160px;}
+    100%{
+        left: 72%;
+        opacity: 0;
+    }
+}
+
+
+
+footer{
+    color: white;
+    height: 10%;
+    margin-top: -5%;
+    background: rgb(21, 21, 21);
+}
+.wrapper-foot{
+    margin-top: 7%;
+}
+
+.home-btn, .about-btn, .gallery-btn, .news-btn, .blog-btn, .faq-btn, .contact-btn, .privac-btn{
+    color: white;
+    text-decoration: none;
+}
+.home:hover, .about:hover, .gallery:hover, .news:hover,
+.blog:hover, .faq:hover, .contact:hover, .privac:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+.home, .about, .gallery, .news, .blog, .faq, .contact{
+    width: 40px;
+}
+.privac{
+    width: 110px;
+}
+
+.home, .about, .gallery, .news{
+    margin: 15px 0px;
+}
+.blog, .faq, .contact, .privac{
+    margin: 10px 0px;
+}
+.parag-wrap{
+    position: absolute;
+    width: 100px;
+    margin-left: 45%;
+}
+
+.parag-2-wrap{
+    position: absolute;
+    width: 100px;
+    margin-left: 70%;
+}
+.wrapper-foot{
+    height: 50%;
+    position: relative;
+}
+
+.fotki{
+    margin-left: 10%;
+    display: inline-block;
+}
+
+
+a.images-1{
+    background: url(./images/fb_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20%;
+}
+a.images-1:hover{
+    background: url(./images/fb.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-1{
+    width: 60px;
+}
+
+a.images-2{
+    background: url(./images/insta_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 150%;
+    
+}
+a.images-2:hover{
+    background: url(./images/insta.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-2{
+    width: 60px;
+}
+
+a.images-3{
+    background: url(./images/youtube_gray.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+a.images-3:hover{
+    background: url(./images/youtube.png);
+    box-shadow: 4px 3px 10px 0px#e3e3e3;
+}
+.foto-3{
+    width: 60px;
+}
+
+.liniya{
+    position: relative;
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.copyrig {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+
+
